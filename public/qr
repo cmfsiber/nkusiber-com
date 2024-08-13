@@ -1,1 +1,12 @@
-QR kodu okutunca bu sayfaya geleceksiniz!
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ÇMF Siber QR</title>
+</head>
+
+<body>
+QR Kod okuttunuz! Tebrikler! 🥳🎉
+</body>
+
+</html>
