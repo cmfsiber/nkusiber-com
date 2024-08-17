@@ -1,0 +1,9 @@
+{
+    "name": "Yiğit Altınay",
+    "image" : "img/avatar/yigit-altinay.jpg",
+    "bio": "Bir kaplumbağa olsaydım Fransızca konuşurdum.",
+    "social": [
+        { "linkedin": "https://linkedin.com/in/altinay-yigit" },
+        { "github": "https://github.com/yigib" }
+    ]
+}

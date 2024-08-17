@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Etiketler on ÇMF Siber Güvenlik Topluluğu</title>
+    <link>https://cmfsiber.com/etiketler/</link>
+    <description>Recent content in Etiketler on ÇMF Siber Güvenlik Topluluğu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <managingEditor>cmfsiber@gmail.com (ÇMF Siber Güvenlik Topluluğu)</managingEditor>
+    <webMaster>cmfsiber@gmail.com (ÇMF Siber Güvenlik Topluluğu)</webMaster>
+    <copyright>© 2024 ÇMF Siber Güvenlik Topluluğu</copyright>
+    <atom:link href="https://cmfsiber.com/etiketler/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
