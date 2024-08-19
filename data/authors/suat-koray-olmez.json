@@ -1,0 +1,9 @@
+{
+    "name": "Suat Koray Ölmez",
+    "image" : "img/avatar/suat-koray-olmez.jpg",
+    "bio": "Bilgisayar Mühendisliği Öğrencisi.",
+    "social": [
+        { "linkedin": "https://linkedin.com/in/suat-koray-olmez" },
+        { "github": "https://github.com/SuatKoray" }
+    ]
+}

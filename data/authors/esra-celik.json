@@ -1,0 +1,9 @@
+{
+    "name": "Esra Çelik",
+    "image" : "img/avatar/esra-celik.jpg",
+    "bio": "Bilgisayar Mühendisliği Öğrencisi.",
+    "social": [
+        { "linkedin": "https://www.linkedin.com/in/esra-%C3%A7elik-5172222a4/" },
+        { "github": "https://github.com/esracelik0" }
+    ]
+}

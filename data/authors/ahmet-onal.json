@@ -1,0 +1,9 @@
+{
+    "name": "Ahmet Önal",
+    "image" : "img/avatar/ahmet-onal.jpg",
+    "bio": "Sic Parvis Magna",
+    "social": [
+        { "linkedin": "https://www.linkedin.com/in/ahmet-%C3%B6nal-2a9629213/" },
+        { "github": "https://github.com/Ballbrek26" }
+    ]
+}

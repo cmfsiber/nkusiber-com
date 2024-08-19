@@ -1,0 +1,9 @@
+{
+    "name": "Gülcan Soylu",
+    "image" : "img/avatar/gulcan-soylu.jpg",
+    "bio": "Bilgisayar Mühendisliği Öğrencisi.",
+    "social": [
+        { "linkedin": "https://www.linkedin.com/in/g%C3%BClcansoylu/" },
+        { "github": "https://github.com/GulcanSoylu" }
+    ]
+}
