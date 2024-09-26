@@ -1,7 +1,7 @@
 languageCode = "tr"
 languageName = "Turkish"
 weight = 1
-title = "ÇMF Siber Güvenlik Topluluğu"
+title = "NKÜ Siber Güvenlik Topluluğu"
 
 [params]
   displayName = "Turkish"
@@ -9,10 +9,10 @@ title = "ÇMF Siber Güvenlik Topluluğu"
   rtl = false
   dateFormat = "2 January 2006"
   logo = "img/cmf-siber-guvenlik-logo.png"
-  description = "ÇMF Siber Güvenlik Topluluğu İnternet Sitesi"
+  description = "NKÜ Siber Güvenlik Topluluğu İnternet Sitesi"
 
 [author]
-  name = "ÇMF Siber Güvenlik Topluluğu"
+  name = "NKÜ Siber Güvenlik Topluluğu"
   email = "cmfsiber@gmail.com"
   image = "img/cmf-siber-guvenlik-logo.png"
   headline = "Kampüste dijital dönüşüm. Sen de bize katıl!"

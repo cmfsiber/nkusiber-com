@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://cmfsiber.com"
+baseURL = "https://nkusiber.com"
 defaultContentLanguage = "tr"
 disableLanguages = [] #to allow translation work requiring shipping to production
 

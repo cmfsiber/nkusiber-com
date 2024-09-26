@@ -3,58 +3,64 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://cmfsiber.com/tags/ascii/</loc>
+    <loc>https://nkusiber.com/tags/ascii/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cmfsiber.com/blog/ascii-art-nedir/</loc>
+    <loc>https://nkusiber.com/blog/ascii-art-nedir/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cmfsiber.com/blog/</loc>
+    <loc>https://nkusiber.com/blog/linux-mint-ve-arch-linux-arasindaki-farklar/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cmfsiber.com/</loc>
+    <loc>https://nkusiber.com/blog/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cmfsiber.com/tags/d%C3%BCz-metin/</loc>
+    <loc>https://nkusiber.com/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cmfsiber.com/tags/</loc>
+    <loc>https://nkusiber.com/tags/d%C3%BCz-metin/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cmfsiber.com/etiketler/</loc>
+    <loc>https://nkusiber.com/tags/</loc>
+    <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cmfsiber.com/kategoriler/</loc>
+    <loc>https://nkusiber.com/etiketler/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cmfsiber.com/series/</loc>
+    <loc>https://nkusiber.com/kategoriler/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cmfsiber.com/seriler/</loc>
+    <loc>https://nkusiber.com/series/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nkusiber.com/seriler/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

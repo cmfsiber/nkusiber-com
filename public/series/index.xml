@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on ÇMF Siber Güvenlik Topluluğu</title>
-    <link>https://cmfsiber.com/series/</link>
-    <description>Recent content in Series on ÇMF Siber Güvenlik Topluluğu</description>
+    <title>Series on NKÜ Siber Güvenlik Topluluğu</title>
+    <link>https://nkusiber.com/series/</link>
+    <description>Recent content in Series on NKÜ Siber Güvenlik Topluluğu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr</language>
-    <managingEditor>cmfsiber@gmail.com (ÇMF Siber Güvenlik Topluluğu)</managingEditor>
-    <webMaster>cmfsiber@gmail.com (ÇMF Siber Güvenlik Topluluğu)</webMaster>
-    <copyright>© 2024 ÇMF Siber Güvenlik Topluluğu</copyright>
-    <atom:link href="https://cmfsiber.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</managingEditor>
+    <webMaster>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</webMaster>
+    <copyright>© 2024 NKÜ Siber Güvenlik Topluluğu</copyright>
+    <atom:link href="https://nkusiber.com/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

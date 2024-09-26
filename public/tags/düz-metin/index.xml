@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Düz Metin on ÇMF Siber Güvenlik Topluluğu</title>
-    <link>https://cmfsiber.com/tags/d%C3%BCz-metin/</link>
-    <description>Recent content in Düz Metin on ÇMF Siber Güvenlik Topluluğu</description>
+    <title>Düz Metin on NKÜ Siber Güvenlik Topluluğu</title>
+    <link>https://nkusiber.com/tags/d%C3%BCz-metin/</link>
+    <description>Recent content in Düz Metin on NKÜ Siber Güvenlik Topluluğu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr</language>
-    <managingEditor>cmfsiber@gmail.com (ÇMF Siber Güvenlik Topluluğu)</managingEditor>
-    <webMaster>cmfsiber@gmail.com (ÇMF Siber Güvenlik Topluluğu)</webMaster>
-    <copyright>© 2024 ÇMF Siber Güvenlik Topluluğu</copyright>
-    <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://cmfsiber.com/tags/d%C3%BCz-metin/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</managingEditor>
+    <webMaster>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</webMaster>
+    <copyright>© 2024 NKÜ Siber Güvenlik Topluluğu</copyright>
+    <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nkusiber.com/tags/d%C3%BCz-metin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ASCII Art (ASCII Sanatı) Nedir?</title>
-      <link>https://cmfsiber.com/blog/ascii-art-nedir/</link>
+      <link>https://nkusiber.com/blog/ascii-art-nedir/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <author>cmfsiber@gmail.com (ÇMF Siber Güvenlik Topluluğu)</author>
-      <guid>https://cmfsiber.com/blog/ascii-art-nedir/</guid>
+      <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
+      <guid>https://nkusiber.com/blog/ascii-art-nedir/</guid>
       <description>Günümüzde görsel denince aklımıza pikseller geliyor.
 Peki hep böyle miydi? İnternetin ilk günlerinde hızlar düşüktü ve gönderilen her bayt önemliydi. Bant genişliğinin sınırlı olduğu kadar işlemci gücü de sınırlıydı. Görsel sıkıştırmak veya sıkıştırılmış görseli açmak anlık işlemler değildi.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://cmfsiber.com/blog/ascii-art-nedir/thumbnail.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/blog/ascii-art-nedir/thumbnail.png" />
+    </item>
+    
+    <item>
+      <title>ASCII Art (ASCII Sanatı) Nedir?</title>
+      <link>https://nkusiber.com/blog/linux-mint-ve-arch-linux-arasindaki-farklar/</link>
+      <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
+      <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
+      <guid>https://nkusiber.com/blog/linux-mint-ve-arch-linux-arasindaki-farklar/</guid>
+      <description>Günümüzde görsel denince aklımıza pikseller geliyor.
+Peki hep böyle miydi? İnternetin ilk günlerinde hızlar düşüktü ve gönderilen her bayt önemliydi. Bant genişliğinin sınırlı olduğu kadar işlemci gücü de sınırlıydı. Görsel sıkıştırmak veya sıkıştırılmış görseli açmak anlık işlemler değildi.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/blog/linux-mint-ve-arch-linux-arasindaki-farklar/thumbnail.png" />
     </item>
     
   </channel>
