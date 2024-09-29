@@ -3,7 +3,7 @@ title: "ASCII Art (ASCII Sanatı) Nedir?"
 draft: false
 description: "İnternette sık rastladığımız ASCII Art'ın kısa tarihi."
 tags: ["ASCII", "Düz Metin"]
-date: 2024-08-17
+date: 2050-08-17
 authors:
  - "yigit-altinay"
 ---
