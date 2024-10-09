@@ -21,16 +21,5 @@ Peki hep böyle miydi? İnternetin ilk günlerinde hızlar düşüktü ve gönde
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/blog/ascii-art-nedir/thumbnail.png" />
     </item>
     
-    <item>
-      <title>ASCII Art (ASCII Sanatı) Nedir?</title>
-      <link>https://nkusiber.com/blog/linux-mint-ve-arch-linux-arasindaki-farklar/</link>
-      <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
-      <guid>https://nkusiber.com/blog/linux-mint-ve-arch-linux-arasindaki-farklar/</guid>
-      <description>Günümüzde görsel denince aklımıza pikseller geliyor.
-Peki hep böyle miydi? İnternetin ilk günlerinde hızlar düşüktü ve gönderilen her bayt önemliydi. Bant genişliğinin sınırlı olduğu kadar işlemci gücü de sınırlıydı. Görsel sıkıştırmak veya sıkıştırılmış görseli açmak anlık işlemler değildi.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/blog/linux-mint-ve-arch-linux-arasindaki-farklar/thumbnail.png" />
-    </item>
-    
   </channel>
 </rss>

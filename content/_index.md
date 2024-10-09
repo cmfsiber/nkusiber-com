@@ -1,5 +1,5 @@
 ---
-title: "ÇMF Siber Güvenlik Topluluğu İnternet Sitesi"
+title: "Anasayfa"
 description: "Siber Güvenlik ile İlgilenen Bir Grup Öğrencinin İnternet Sitesi"
 ---
 

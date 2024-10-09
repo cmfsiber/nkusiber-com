@@ -4,6 +4,7 @@ draft: false
 description: "İnternette sık rastladığımız ASCII Art'ın kısa tarihi."
 tags: ["ASCII", "Düz Metin"]
 date: 2050-08-17
+draft: true
 authors:
  - "yigit-altinay"
 ---
