@@ -675,15 +675,20 @@ Elimize sizinle ilgili birkaç veri geçebilirdi.
   console.log(ua);
 
   if (ua.isAndroid)
-    var mobilos = "Android";
+    var mobilcihaz = "Android Grup";
   else if (ua.isWebkit)
-    var mobilos = "iPhone";
+    var mobilcihaz = "iPhone";
   else
-    var mobilos = "Emin olamadık...";
+    var mobilcihaz = "Emin olamadık...";
+
+  if (ua.platform == "iPhone")
+    var mobilos = "iOS";
+  else
+    var mobilos = ua.platform;
 
 document.getElementById("p1").innerHTML = "Tarayıcı: " + ua.name;
-document.getElementById("p2").innerHTML = "Telefon Tipi: " + mobilos;
-document.getElementById("p3").innerHTML = "İşletim Sistemi: " + ua.platform;
+document.getElementById("p2").innerHTML = "Telefon Tipi: " + mobilcihaz;
+document.getElementById("p3").innerHTML = "İşletim Sistemi: " + mobilos;
 document.getElementById("p4").innerHTML = "Saat Dilimi: " + Intl.DateTimeFormat().resolvedOptions().timeZone;
 document.getElementById("p5").innerHTML = "Diller: " + navigator.languages;
 </script>
