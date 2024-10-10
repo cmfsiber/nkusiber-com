@@ -41,7 +41,7 @@ Bütün testler tarayıcı tarafında yapıldı ve hiçbir veri cihazınızı te
   else
     var mobilcihaz = "Emin olamadık...";
 
-  if (ua.platform == "iPhone")
+  if (ua.platform.match(/iphone/i)
     var mobilos = "iOS";
   else
     var mobilos = ua.platform;

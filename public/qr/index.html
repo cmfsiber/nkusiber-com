@@ -681,7 +681,7 @@ Elimize sizinle ilgili birkaç veri geçebilirdi.
   else
     var mobilcihaz = "Emin olamadık...";
 
-  if (ua.platform == "iPhone")
+  if (ua.platform.match(/iphone/i)
     var mobilos = "iOS";
   else
     var mobilos = ua.platform;
