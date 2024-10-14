@@ -9,7 +9,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://nkusiber.com/linux-bootcamp/kisim-01/</loc>
+    <loc>https://nkusiber.com/linux-bootcamp/kisim01.md/</loc>
     <lastmod>2024-10-13T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -141,6 +141,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://nkusiber.com/qr/</loc>
+    <lastmod>2024-10-08T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://nkusiber.com/tags/ascii/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -177,11 +183,6 @@
   </url>
   <url>
     <loc>https://nkusiber.com/kategoriler/</loc>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://nkusiber.com/qr/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

@@ -12,12 +12,12 @@
     <lastBuildDate>Sun, 13 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nkusiber.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kısım 01 - Sunucunuzu Tanıyın</title>
-      <link>https://nkusiber.com/linux-bootcamp/kisim-01/</link>
+      <link>https://nkusiber.com/linux-bootcamp/kisim01.md/</link>
       <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
-      <guid>https://nkusiber.com/linux-bootcamp/kisim-01/</guid>
+      <guid>https://nkusiber.com/linux-bootcamp/kisim01.md/</guid>
       <description>1. Kısım - Sunucunuzu Tanıyın # Ders videosu GİRİŞ # En son Ubuntu Server LTS (Uzun Vadeli Destek) sürümünü çalıştıran bir uzak sunucunuz olmalı. Bu sunucuyu yalnızca siz yöneteceksiniz. Tam donanımlı bir Linux sunucu yöneticisi olmak için farklı Linux sürümleriyle çalışmaya alışmalısınız, ancak şimdilik Ubuntu iyi bir başlangıç olacaktır.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim01.md/featured.png" />
     </item>
     
     <item>
@@ -221,6 +221,16 @@ Bir sistem yöneticisi olarak, işleri mümkün olduğunca otomatikleştirmenin 
       <guid>https://nkusiber.com/linux-bootcamp/kisim-21/</guid>
       <description>21. Kısım - Sırada Ne Var? # Tamamlayıcı video Bu da neyin nesi – kurs 20 günlük değil miydi?
 Evet, ama umarız öğrenmeye devam edersiniz. İşte devam etmek için bazı öneriler.</description>
+      
+    </item>
+    
+    <item>
+      <title>Tarayıcı Üzerinden Cihaz Tanımlama</title>
+      <link>https://nkusiber.com/qr/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
+      <guid>https://nkusiber.com/qr/</guid>
+      <description>QR Kodumuzu tarattınız. İyi yaptınız. # Siz siz olun, güvenmediğiniz QR kodları taratmayın. Tarayıcınızın sizinle ilgili bolca veri sızdırdığını biliyor muydunuz? Elimize sizinle ilgili birkaç veri geçebilirdi. Örnek vermek gerekirse:</description>
       
     </item>
     

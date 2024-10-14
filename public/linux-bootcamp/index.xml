@@ -12,12 +12,12 @@
     <lastBuildDate>Sun, 13 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nkusiber.com/linux-bootcamp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kısım 01 - Sunucunuzu Tanıyın</title>
-      <link>https://nkusiber.com/linux-bootcamp/kisim-01/</link>
+      <link>https://nkusiber.com/linux-bootcamp/kisim01.md/</link>
       <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
-      <guid>https://nkusiber.com/linux-bootcamp/kisim-01/</guid>
+      <guid>https://nkusiber.com/linux-bootcamp/kisim01.md/</guid>
       <description>1. Kısım - Sunucunuzu Tanıyın # Ders videosu GİRİŞ # En son Ubuntu Server LTS (Uzun Vadeli Destek) sürümünü çalıştıran bir uzak sunucunuz olmalı. Bu sunucuyu yalnızca siz yöneteceksiniz. Tam donanımlı bir Linux sunucu yöneticisi olmak için farklı Linux sürümleriyle çalışmaya alışmalısınız, ancak şimdilik Ubuntu iyi bir başlangıç olacaktır.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim01.md/featured.png" />
     </item>
     
     <item>
