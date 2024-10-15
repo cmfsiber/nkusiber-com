@@ -231,7 +231,7 @@ Evet, ama umarız öğrenmeye devam edersiniz. İşte devam etmek için bazı ö
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
       <guid>https://nkusiber.com/qr/</guid>
       <description>QR Kodumuzu tarattınız. İyi yaptınız. # Siz siz olun, güvenmediğiniz QR kodları taratmayın. Tarayıcınızın sizinle ilgili bolca veri sızdırdığını biliyor muydunuz? Elimize sizinle ilgili birkaç veri geçebilirdi. Örnek vermek gerekirse:</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/qr/featured%20%28Copy%29.png" />
     </item>
     
     <item>
