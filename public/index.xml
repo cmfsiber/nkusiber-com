@@ -22,12 +22,12 @@
     
     <item>
       <title>Kısım 01 - Sunucunuzu Tanıyın</title>
-      <link>https://nkusiber.com/linux-bootcamp/kisim01.md/</link>
+      <link>https://nkusiber.com/linux-bootcamp/kisim-01/</link>
       <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
-      <guid>https://nkusiber.com/linux-bootcamp/kisim01.md/</guid>
+      <guid>https://nkusiber.com/linux-bootcamp/kisim-01/</guid>
       <description>1. Kısım - Sunucunuzu Tanıyın # Ders videosu GİRİŞ # En son Ubuntu Server LTS (Uzun Vadeli Destek) sürümünü çalıştıran bir uzak sunucunuz olmalı. Bu sunucuyu yalnızca siz yöneteceksiniz. Tam donanımlı bir Linux sunucu yöneticisi olmak için farklı Linux sürümleriyle çalışmaya alışmalısınız, ancak şimdilik Ubuntu iyi bir başlangıç olacaktır.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim01.md/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim-01/featured.jpg" />
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
       <guid>https://nkusiber.com/linux-bootcamp/kisim-02/</guid>
       <description>2. Kısım - Temel Gezinti # Ders videosu GİRİŞ # Linux ve Unix dünyasının dışında, çoğu kullanıcı komut satırında fazla vakit geçirmez. Ancak bir Linux sistem yöneticisi olarak, komut satırı sizin varsayılan çalışma ortamınızdır, bu nedenle bu konuda yetkin olmanız gerekir.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim-02/featured.jpg" />
     </item>
     
     <item>
@@ -47,7 +47,7 @@
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
       <guid>https://nkusiber.com/linux-bootcamp/kisim-03/</guid>
       <description>3. Kısım - Güç Deliği! # Ders videosu GİRİŞ # Sunucunuza sıradan bir kullanıcı olarak giriş yapıyor olabilirsiniz, ancak muhtemelen root kullanıcısının bir Linux sisteminde en güçlü kullanıcı olduğunun farkındasınız.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim-03/featured.jpeg" />
     </item>
     
     <item>
@@ -57,7 +57,7 @@
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
       <guid>https://nkusiber.com/linux-bootcamp/kisim-04/</guid>
       <description>4. Kısım - Yazılım Kurulumu ve Dosya Yapısının Keşfi # Ders videosu GİRİŞ # Bir sistem yöneticisi olarak temel görevlerinizden biri, gerektiğinde yeni yazılımlar kurmaktır. Ayrıca, bir Linux sistemindeki standart dizinlerin yapısına çok aşina olmanız gerekecek.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim-04/featured.jpg" />
     </item>
     
     <item>
@@ -67,7 +67,7 @@
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
       <guid>https://nkusiber.com/linux-bootcamp/kisim-05/</guid>
       <description>5. Kısım - More veya Less&amp;hellip; # Ders videosu GİRİŞ # Bugünü hızlıca beş farklı konunun kısa bir tanıtımıyla tamamlayacağız. Bugün bu konularda ustalaşmanız gerekmiyor – bunların hepsiyle sonraki oturumlarda bol bol pratik yapacaksınız!</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim-05/featured.jpg" />
     </item>
     
     <item>
@@ -77,7 +77,7 @@
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
       <guid>https://nkusiber.com/linux-bootcamp/kisim-06/</guid>
       <description>6. Kısım - &amp;ldquo;vim&amp;rdquo; ile Düzenleme # Tamamlayıcı video GİRİŞ # Linux&amp;rsquo;un temelinde basit metin dosyaları bulunur, bu yüzden bu dosyaları düzenlemek bir sistem yöneticisi için önemli bir beceridir. Başlangıç seviyesindeki kullanıcılar için tasarlanmış birçok basit metin düzenleyici vardır.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim-06/featured.jpg" />
     </item>
     
     <item>
@@ -87,7 +87,7 @@
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
       <guid>https://nkusiber.com/linux-bootcamp/kisim-07/</guid>
       <description>7. Kısım - Sunucu ve Servisleri # Ders videosu GİRİŞ # Bugün yaygın bir sunucu uygulaması olan Apache2 web sunucusunu (httpd) kuracaksınız. Bu, &amp;ldquo;Hyper Text Transport Protocol Daemon&amp;rdquo; olarak bilinir!</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim-07/featured.jpeg" />
     </item>
     
     <item>
