@@ -12,6 +12,36 @@ Elimize sizinle ilgili birkaç veri geçebilirdi.
 Örnek vermek gerekirse:
 
 <big>
+ <table style="padding: 1em; border-spacing: 55em; border: 1px solid black; ">
+  <tr>
+    <th>Kategori</th>
+    <th>Cihazınız</th>
+  </tr>
+  <tr>
+    <td>Tarayıcı</td>
+    <td id="p1">.</td>
+  </tr>
+  <tr>
+    <td>Telefon Tipi</td>
+    <td id="p2">.</td>
+  </tr>
+  <tr>
+    <td>İşletim Sistemi</td>
+    <td id="p3">.</td>
+  </tr>
+  <tr>
+    <td>Saat Dilimi</td>
+    <td id="p4">.</td>
+  </tr>
+  <tr>
+    <td>Diller</td>
+    <td id="p5">.</td>
+  </tr>
+</table> 
+</big>
+
+<!---
+<big>
 <b>
 <p id="p1">.</p>
 <p id="p2">.</p>
@@ -20,7 +50,7 @@ Elimize sizinle ilgili birkaç veri geçebilirdi.
 <p id="p5">.</p>
 </b>
 </big>
-
+--->
 Bize inanmadınız mı? Başka bir telefondan aynı QR kodu taratın.
 
 İkna olduysanız içiniz rahat olsun.
@@ -40,18 +70,18 @@ Bütün testler tarayıcı tarafında yapıldı ve hiçbir veri cihazınızı te
   else if (ua.isWebkit)
     var mobilcihaz = "iPhone";
   else
-    var mobilcihaz = "Emin olamadık...";
+    var mobilcihaz = "Telefondan girdiğinize emin misiniz?";
 
   if (ua.platform.match(/iphone/i))
     var mobilos = "iOS";
   else
     var mobilos = ua.platform;
 
-document.getElementById("p1").innerHTML = "Tarayıcı: " + ua.name;
-document.getElementById("p2").innerHTML = "Telefon Tipi: " + mobilcihaz;
-document.getElementById("p3").innerHTML = "İşletim Sistemi: " + mobilos;
-document.getElementById("p4").innerHTML = "Saat Dilimi: " + Intl.DateTimeFormat().resolvedOptions().timeZone;
-document.getElementById("p5").innerHTML = "Diller: " + navigator.languages;
+document.getElementById("p1").innerHTML = ua.name;
+document.getElementById("p2").innerHTML = mobilcihaz;
+document.getElementById("p3").innerHTML = mobilos;
+document.getElementById("p4").innerHTML = Intl.DateTimeFormat().resolvedOptions().timeZone;
+document.getElementById("p5").innerHTML = navigator.languages;
 </script>
 
 
