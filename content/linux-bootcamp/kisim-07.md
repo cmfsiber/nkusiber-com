@@ -35,17 +35,25 @@ Eğer bir web sitesi profesyoneliyseniz, bazı şeyleri farklı yapabilirsiniz. 
   http://[sunucunuzun harici IP’si]  
   Burada bir onay sayfası görmelisiniz.
 * Apache bir "servis" olarak kurulur – sunucu açıldığında otomatik olarak başlar ve kimse giriş yapmamış olsa bile çalışmaya devam eder. Aşağıdaki komutla durdurmayı deneyin:  
-  sudo systemctl stop apache2  
+```bash
+sudo systemctl stop apache2  
+```
   Web sayfasının erişilemez hale geldiğini kontrol edin. Ardından şu komutla yeniden başlatın:  
+```bash
   sudo systemctl start apache2  
+```
   Durumunu kontrol etmek için:  
+```bash
   systemctl status apache2
+```
 * Çoğu Linux yazılımında olduğu gibi, yapılandırma dosyaları _/etc_ dizini altındadır. Özellikle `/etc/apache2` altındaki yapılandırma dosyalarına göz atın. `/etc/apache2/apache2.conf` dosyasını inceleyin – isterseniz less ile görüntüleyebilir veya vim ile düzenleyebilirsiniz.
 * `/etc/apache2/apache2.conf` dosyasında "IncludeOptional conf-enabled/*.conf" satırını göreceksiniz. Bu, Apache’ye, *conf-enabled* alt dizinindeki .conf dosyalarının `/etc/apache2/apache2.conf` ile birleştirilerek yüklenmesini söyler. Bu tür küçük, spesifik yapılandırma dosyaları yaygındır.
 * Web sunucuları konusunda deneyimliyseniz, sanal hostlar kurabilir veya bazı modüller ekleyebilirsiniz.
 * Varsayılan web sayfasının yeri, `/etc/apache2/sites-enabled/000-default.conf` dosyasındaki *DocumentRoot* parametresi ile tanımlanır.
 * Varsayılan sayfanın kodunu görmek için `/var/www/html/index.html` dosyasını less veya vim ile inceleyin. Oldukça modern bir tasarım içerir, bu yüzden [http://165.227.92.20/sample](http://165.227.92.20/sample) adresindeki daha basit bir sayfayı ziyaret etmek isteyebilirsiniz. Tarayıcınızda "Kaynağı Görüntüle" seçeneğiyle bu sayfanın kodunu kopyalayın. Ardından şu komutla düzenleyin:  
-  sudo vim /var/www/html/index.html  
+```bash
+sudo vim /var/www/html/index.html  
+```
   Mevcut içeriği silin, basit örneği yapıştırın ve isteğinize göre düzenleyin. Sonucu görmek için tarayıcınızdan _http://[sunucunuzun harici IP’si]_ adresine gidin.
 * Çoğu Linux servisinde olduğu gibi, Apache log dosyalarını `/var/log` dizini altında tutar. `/var/log/apache2` altındaki loglara bakın. `access.log` dosyasında test sayfasını ziyaret ettiğinizde oluşturulan kayıtları görebilirsiniz. Buradaki detay miktarı göz korkutucu olabilir – bu normaldir, ancak sonraki derslerde istediğiniz bilgileri filtrelemeyi öğreneceksiniz. `error.log` dosyasına da bakın – umarız ki boş olacaktır!
 
@@ -81,6 +89,4 @@ Metin düzenleme becerilerinizi geliştirin ve ilerlemenizi göstermek için `/v
 [Buradaki](https://sadservers.com/) bazı zorluklarla öğrendiklerinizi pekiştirin:
 
 * ["Cape Town": Borked Nginx](https://sadservers.com/scenario/capetown)
-
-Bazı haklar saklıdır. Lisans şartlarını [buradan](https://github.com/livialima/linuxupskillchallenge/blob/master/LICENSE) kontrol edin.
 

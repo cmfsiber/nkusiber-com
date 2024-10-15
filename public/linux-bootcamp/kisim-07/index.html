@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "523"
+    "wordCount": "515"
   }]
   </script>
 
@@ -1052,19 +1052,23 @@ sudo apt install apache2</li>
 <li>Çalıştığını doğrulamak için tarayıcınızda sunucunuzun harici IP adresine gidin:<br>
 http://[sunucunuzun harici IP’si]<br>
 Burada bir onay sayfası görmelisiniz.</li>
-<li>Apache bir &ldquo;servis&rdquo; olarak kurulur – sunucu açıldığında otomatik olarak başlar ve kimse giriş yapmamış olsa bile çalışmaya devam eder. Aşağıdaki komutla durdurmayı deneyin:<br>
-sudo systemctl stop apache2<br>
-Web sayfasının erişilemez hale geldiğini kontrol edin. Ardından şu komutla yeniden başlatın:<br>
-sudo systemctl start apache2<br>
-Durumunu kontrol etmek için:<br>
-systemctl status apache2</li>
+<li>Apache bir &ldquo;servis&rdquo; olarak kurulur – sunucu açıldığında otomatik olarak başlar ve kimse giriş yapmamış olsa bile çalışmaya devam eder. Aşağıdaki komutla durdurmayı deneyin:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl stop apache2  
+</span></span></code></pre></div><p>Web sayfasının erişilemez hale geldiğini kontrol edin. Ardından şu komutla yeniden başlatın:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  sudo systemctl start apache2  
+</span></span></code></pre></div><p>Durumunu kontrol etmek için:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  systemctl status apache2
+</span></span></code></pre></div><ul>
 <li>Çoğu Linux yazılımında olduğu gibi, yapılandırma dosyaları <em>/etc</em> dizini altındadır. Özellikle <code>/etc/apache2</code> altındaki yapılandırma dosyalarına göz atın. <code>/etc/apache2/apache2.conf</code> dosyasını inceleyin – isterseniz less ile görüntüleyebilir veya vim ile düzenleyebilirsiniz.</li>
 <li><code>/etc/apache2/apache2.conf</code> dosyasında &ldquo;IncludeOptional conf-enabled/*.conf&rdquo; satırını göreceksiniz. Bu, Apache’ye, <em>conf-enabled</em> alt dizinindeki .conf dosyalarının <code>/etc/apache2/apache2.conf</code> ile birleştirilerek yüklenmesini söyler. Bu tür küçük, spesifik yapılandırma dosyaları yaygındır.</li>
 <li>Web sunucuları konusunda deneyimliyseniz, sanal hostlar kurabilir veya bazı modüller ekleyebilirsiniz.</li>
 <li>Varsayılan web sayfasının yeri, <code>/etc/apache2/sites-enabled/000-default.conf</code> dosyasındaki <em>DocumentRoot</em> parametresi ile tanımlanır.</li>
-<li>Varsayılan sayfanın kodunu görmek için <code>/var/www/html/index.html</code> dosyasını less veya vim ile inceleyin. Oldukça modern bir tasarım içerir, bu yüzden <a href="http://165.227.92.20/sample" target="_blank">http://165.227.92.20/sample</a> adresindeki daha basit bir sayfayı ziyaret etmek isteyebilirsiniz. Tarayıcınızda &ldquo;Kaynağı Görüntüle&rdquo; seçeneğiyle bu sayfanın kodunu kopyalayın. Ardından şu komutla düzenleyin:<br>
-sudo vim /var/www/html/index.html<br>
-Mevcut içeriği silin, basit örneği yapıştırın ve isteğinize göre düzenleyin. Sonucu görmek için tarayıcınızdan <em>http://[sunucunuzun harici IP’si]</em> adresine gidin.</li>
+<li>Varsayılan sayfanın kodunu görmek için <code>/var/www/html/index.html</code> dosyasını less veya vim ile inceleyin. Oldukça modern bir tasarım içerir, bu yüzden <a href="http://165.227.92.20/sample" target="_blank">http://165.227.92.20/sample</a> adresindeki daha basit bir sayfayı ziyaret etmek isteyebilirsiniz. Tarayıcınızda &ldquo;Kaynağı Görüntüle&rdquo; seçeneğiyle bu sayfanın kodunu kopyalayın. Ardından şu komutla düzenleyin:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo vim /var/www/html/index.html  
+</span></span></code></pre></div><p>Mevcut içeriği silin, basit örneği yapıştırın ve isteğinize göre düzenleyin. Sonucu görmek için tarayıcınızdan <em>http://[sunucunuzun harici IP’si]</em> adresine gidin.</p>
+<ul>
 <li>Çoğu Linux servisinde olduğu gibi, Apache log dosyalarını <code>/var/log</code> dizini altında tutar. <code>/var/log/apache2</code> altındaki loglara bakın. <code>access.log</code> dosyasında test sayfasını ziyaret ettiğinizde oluşturulan kayıtları görebilirsiniz. Buradaki detay miktarı göz korkutucu olabilir – bu normaldir, ancak sonraki derslerde istediğiniz bilgileri filtrelemeyi öğreneceksiniz. <code>error.log</code> dosyasına da bakın – umarız ki boş olacaktır!</li>
 </ul>
 
@@ -1162,7 +1166,6 @@ Mevcut içeriği silin, basit örneği yapıştırın ve isteğinize göre düze
 <ul>
 <li><a href="https://sadservers.com/scenario/capetown" target="_blank">&ldquo;Cape Town&rdquo;: Borked Nginx</a></li>
 </ul>
-<p>Bazı haklar saklıdır. Lisans şartlarını <a href="https://github.com/livialima/linuxupskillchallenge/blob/master/LICENSE" target="_blank">buradan</a> kontrol edin.</p>
 
           
           
