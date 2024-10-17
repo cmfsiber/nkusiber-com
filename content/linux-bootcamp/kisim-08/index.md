@@ -20,33 +20,53 @@ Düz metin dosyaları, "Unix yöntemi"nin temelidir ve bunları kolayca düzenle
 ## BUGÜNKÜ GÖREVLERİNİZ
 
 * Bir dosyanın tam içeriğini şu şekilde görüntüleyin:  
+```
   cat /var/log/apache2/access.log
+```
 * Aynı dosyayı şu komutla açın:  
+```
   less /var/log/apache2/access.log  
+```
   Ok tuşlarıyla yukarı-aşağı hareket edin ve "q" ile çıkın.
 * less kullanarak dosya içinde *gg*, *GG*, */*, *n* ve *N* ile gezinme pratiği yapın (dosyanın başına, sonuna gitmek, bir şey aramak ve sonraki veya önceki eşleşmeye atlamak için).
 * `/var/log/auth.log` dosyasını less ile açarak son girişleri ve sudo kullanımlarını inceleyin.
 * Dosyanın son birkaç satırını görüntüleyin:  
+```
   tail /var/log/apache2/access.log  
+```
   (Evet, ayrıca `head` komutu da var!)
 * Bir log dosyasını gerçek zamanlı olarak izleyin:  
+```
   tail -f /var/log/apache2/access.log  
+```
   (Bu sırada tarayıcıdan sunucunuzun web sayfasına erişin.)
 * Bir komutun çıktısını başka bir komuta "girdi" olarak iletmek için `|` (pipe) sembolünü kullanın.
 * Örneğin, bir dosyanın çıktısını `cat` ile alıp `grep` ile arama terimi ile filtreleyin:  
+```
   cat /var/log/auth.log | grep "authenticating"
+```
 * Bunu daha basit hale getirin:  
+```
   grep "authenticating" /var/log/auth.log
+```
 * Piping (borulama) kullanarak aramanızı daraltın:  
+```
   grep "authenticating" /var/log/auth.log | grep "root"
+```
 * `cut` komutunu kullanarak her satırın en ilginç kısımlarını seçin:  
+```
   grep "authenticating" /var/log/auth.log | grep "root" | cut -f 10- -d" "  
+```
   (10. alandan sonrasını seçer, burada alanlar arasındaki ayraç boşluk karakteridir). Bu yöntem, log verilerinden yararlı bilgileri çıkarmada oldukça faydalıdır.
 * Seçimi tersine çevirmek için `-v` seçeneğini kullanın ve başka kullanıcılarla giriş denemelerini bulun:  
+```
   grep "authenticating" /var/log/auth.log | grep -v "root" | cut -f 10- -d" "
+```
 
 Herhangi bir komutun çıktısını ">" operatörü ile bir dosyaya yönlendirebilirsiniz. Örneğin:  
+```
 ls -ltr > listing.txt  
+```
 Bu komut, dizin içeriğini ekranda listelemek yerine "listing.txt" dosyasına yönlendirir (dosya yoksa oluşturur, varsa içeriğini üzerine yazar).
 
 ## /VAR/LOG/AUTH.LOG NEREDE?

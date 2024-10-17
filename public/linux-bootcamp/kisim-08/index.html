@@ -1014,35 +1014,51 @@
     
 </h2>
 <ul>
-<li>Bir dosyanın tam içeriğini şu şekilde görüntüleyin:<br>
-cat /var/log/apache2/access.log</li>
-<li>Aynı dosyayı şu komutla açın:<br>
-less /var/log/apache2/access.log<br>
-Ok tuşlarıyla yukarı-aşağı hareket edin ve &ldquo;q&rdquo; ile çıkın.</li>
+<li>Bir dosyanın tam içeriğini şu şekilde görüntüleyin:</li>
+</ul>
+<pre tabindex="0"><code>  cat /var/log/apache2/access.log
+</code></pre><ul>
+<li>Aynı dosyayı şu komutla açın:</li>
+</ul>
+<pre tabindex="0"><code>  less /var/log/apache2/access.log  
+</code></pre><p>Ok tuşlarıyla yukarı-aşağı hareket edin ve &ldquo;q&rdquo; ile çıkın.</p>
+<ul>
 <li>less kullanarak dosya içinde <em>gg</em>, <em>GG</em>, <em>/</em>, <em>n</em> ve <em>N</em> ile gezinme pratiği yapın (dosyanın başına, sonuna gitmek, bir şey aramak ve sonraki veya önceki eşleşmeye atlamak için).</li>
 <li><code>/var/log/auth.log</code> dosyasını less ile açarak son girişleri ve sudo kullanımlarını inceleyin.</li>
-<li>Dosyanın son birkaç satırını görüntüleyin:<br>
-tail /var/log/apache2/access.log<br>
-(Evet, ayrıca <code>head</code> komutu da var!)</li>
-<li>Bir log dosyasını gerçek zamanlı olarak izleyin:<br>
-tail -f /var/log/apache2/access.log<br>
-(Bu sırada tarayıcıdan sunucunuzun web sayfasına erişin.)</li>
-<li>Bir komutun çıktısını başka bir komuta &ldquo;girdi&rdquo; olarak iletmek için <code>|</code> (pipe) sembolünü kullanın.</li>
-<li>Örneğin, bir dosyanın çıktısını <code>cat</code> ile alıp <code>grep</code> ile arama terimi ile filtreleyin:<br>
-cat /var/log/auth.log | grep &ldquo;authenticating&rdquo;</li>
-<li>Bunu daha basit hale getirin:<br>
-grep &ldquo;authenticating&rdquo; /var/log/auth.log</li>
-<li>Piping (borulama) kullanarak aramanızı daraltın:<br>
-grep &ldquo;authenticating&rdquo; /var/log/auth.log | grep &ldquo;root&rdquo;</li>
-<li><code>cut</code> komutunu kullanarak her satırın en ilginç kısımlarını seçin:<br>
-grep &ldquo;authenticating&rdquo; /var/log/auth.log | grep &ldquo;root&rdquo; | cut -f 10- -d&rdquo; &quot;<br>
-(10. alandan sonrasını seçer, burada alanlar arasındaki ayraç boşluk karakteridir). Bu yöntem, log verilerinden yararlı bilgileri çıkarmada oldukça faydalıdır.</li>
-<li>Seçimi tersine çevirmek için <code>-v</code> seçeneğini kullanın ve başka kullanıcılarla giriş denemelerini bulun:<br>
-grep &ldquo;authenticating&rdquo; /var/log/auth.log | grep -v &ldquo;root&rdquo; | cut -f 10- -d&quot; &quot;</li>
+<li>Dosyanın son birkaç satırını görüntüleyin:</li>
 </ul>
-<p>Herhangi bir komutun çıktısını &ldquo;&gt;&rdquo; operatörü ile bir dosyaya yönlendirebilirsiniz. Örneğin:<br>
-ls -ltr &gt; listing.txt<br>
-Bu komut, dizin içeriğini ekranda listelemek yerine &ldquo;listing.txt&rdquo; dosyasına yönlendirir (dosya yoksa oluşturur, varsa içeriğini üzerine yazar).</p>
+<pre tabindex="0"><code>  tail /var/log/apache2/access.log  
+</code></pre><p>(Evet, ayrıca <code>head</code> komutu da var!)</p>
+<ul>
+<li>Bir log dosyasını gerçek zamanlı olarak izleyin:</li>
+</ul>
+<pre tabindex="0"><code>  tail -f /var/log/apache2/access.log  
+</code></pre><p>(Bu sırada tarayıcıdan sunucunuzun web sayfasına erişin.)</p>
+<ul>
+<li>Bir komutun çıktısını başka bir komuta &ldquo;girdi&rdquo; olarak iletmek için <code>|</code> (pipe) sembolünü kullanın.</li>
+<li>Örneğin, bir dosyanın çıktısını <code>cat</code> ile alıp <code>grep</code> ile arama terimi ile filtreleyin:</li>
+</ul>
+<pre tabindex="0"><code>  cat /var/log/auth.log | grep &#34;authenticating&#34;
+</code></pre><ul>
+<li>Bunu daha basit hale getirin:</li>
+</ul>
+<pre tabindex="0"><code>  grep &#34;authenticating&#34; /var/log/auth.log
+</code></pre><ul>
+<li>Piping (borulama) kullanarak aramanızı daraltın:</li>
+</ul>
+<pre tabindex="0"><code>  grep &#34;authenticating&#34; /var/log/auth.log | grep &#34;root&#34;
+</code></pre><ul>
+<li><code>cut</code> komutunu kullanarak her satırın en ilginç kısımlarını seçin:</li>
+</ul>
+<pre tabindex="0"><code>  grep &#34;authenticating&#34; /var/log/auth.log | grep &#34;root&#34; | cut -f 10- -d&#34; &#34;  
+</code></pre><p>(10. alandan sonrasını seçer, burada alanlar arasındaki ayraç boşluk karakteridir). Bu yöntem, log verilerinden yararlı bilgileri çıkarmada oldukça faydalıdır.</p>
+<ul>
+<li>Seçimi tersine çevirmek için <code>-v</code> seçeneğini kullanın ve başka kullanıcılarla giriş denemelerini bulun:</li>
+</ul>
+<pre tabindex="0"><code>  grep &#34;authenticating&#34; /var/log/auth.log | grep -v &#34;root&#34; | cut -f 10- -d&#34; &#34;
+</code></pre><p>Herhangi bir komutun çıktısını &ldquo;&gt;&rdquo; operatörü ile bir dosyaya yönlendirebilirsiniz. Örneğin:</p>
+<pre tabindex="0"><code>ls -ltr &gt; listing.txt  
+</code></pre><p>Bu komut, dizin içeriğini ekranda listelemek yerine &ldquo;listing.txt&rdquo; dosyasına yönlendirir (dosya yoksa oluşturur, varsa içeriğini üzerine yazar).</p>
 
 
 <h2 class="relative group">/VAR/LOG/AUTH.LOG NEREDE? 
