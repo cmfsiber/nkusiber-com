@@ -27,10 +27,14 @@ Eğer bir web sitesi profesyoneliyseniz, bazı şeyleri farklı yapabilirsiniz. 
 ## TALİMATLAR
 
 * Mevcut paket (uygulama) listenizi şu komutla yenileyin:  
+```bash
   sudo apt update  
+```
   Bu işlem birkaç saniye sürebilir, ancak en güncel sürümleri almanızı sağlar.
 * Apache'yi depodan basit bir komutla kurun:  
+```bash
   sudo apt install apache2  
+```
 * Çalıştığını doğrulamak için tarayıcınızda sunucunuzun harici IP adresine gidin:  
   http://[sunucunuzun harici IP’si]  
   Burada bir onay sayfası görmelisiniz.

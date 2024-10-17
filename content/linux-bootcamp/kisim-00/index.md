@@ -60,9 +60,10 @@ Kısacası, **Bootcamp VirtualBox ve Ubuntu 22.04 LTS üzerinden işlenecektir.*
 ![](10-ubuntu-ag-ayarlar.jpg)
 
 # Sanal Makinenize Erişim
-* **Sanal makinenizi her kapattığınızda bu adımları uygulamanız gerekmektedir.**
+* **Sanal makinenizi her kapattığınızda aşağıdaki adımları uygulamanız gerekmektedir.**
 * VirtualBox üzerinden sanal makinenizi çalıştırın.
 * `ubuntu` kullanıcı ismi ve `ubuntu` parolası ile giriş yapın
+  * Not: Parolanız yazarken gözükmeyecektir
 * Aşağıdaki komutları yazın. (İlk komut parolanızı soracaktır)
 ```bash
 sudo loadkeys tr
