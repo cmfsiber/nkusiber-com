@@ -28,12 +28,12 @@ Eğer bir web sitesi profesyoneliyseniz, bazı şeyleri farklı yapabilirsiniz. 
 
 * Mevcut paket (uygulama) listenizi şu komutla yenileyin:  
 ```bash
-  sudo apt update  
+sudo apt update  
 ```
   Bu işlem birkaç saniye sürebilir, ancak en güncel sürümleri almanızı sağlar.
 * Apache'yi depodan basit bir komutla kurun:  
 ```bash
-  sudo apt install apache2  
+sudo apt install apache2  
 ```
 * Çalıştığını doğrulamak için tarayıcınızda sunucunuzun harici IP adresine gidin:  
   http://[sunucunuzun harici IP’si]  
@@ -44,11 +44,11 @@ sudo systemctl stop apache2
 ```
   Web sayfasının erişilemez hale geldiğini kontrol edin. Ardından şu komutla yeniden başlatın:  
 ```bash
-  sudo systemctl start apache2  
+sudo systemctl start apache2  
 ```
   Durumunu kontrol etmek için:  
 ```bash
-  systemctl status apache2
+sudo systemctl status apache2
 ```
 * Çoğu Linux yazılımında olduğu gibi, yapılandırma dosyaları _/etc_ dizini altındadır. Özellikle `/etc/apache2` altındaki yapılandırma dosyalarına göz atın. `/etc/apache2/apache2.conf` dosyasını inceleyin – isterseniz less ile görüntüleyebilir veya vim ile düzenleyebilirsiniz.
 * `/etc/apache2/apache2.conf` dosyasında "IncludeOptional conf-enabled/*.conf" satırını göreceksiniz. Bu, Apache’ye, *conf-enabled* alt dizinindeki .conf dosyalarının `/etc/apache2/apache2.conf` ile birleştirilerek yüklenmesini söyler. Bu tür küçük, spesifik yapılandırma dosyaları yaygındır.

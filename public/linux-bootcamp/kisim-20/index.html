@@ -68,12 +68,13 @@
 <meta property="og:description" content="20. Kısım - Betik Yazma (Scripting) # Tamamlayıcı video GİRİŞ # Bugün kursun son oturumundayız. Eğer tüm dersleri tamamladıysanız, kendinizi tebrik edin!
 Bir sistem yöneticisi olarak, işleri mümkün olduğunca otomatikleştirmenin önemini gördünüz ve Linux’un oldukça “şeffaf” olduğunu, yani ne aradığınızı bildiğinizde her şeyi bulabileceğinizi öğrendiniz." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nkusiber.com/linux-bootcamp/kisim-20/" /><meta property="article:section" content="linux-bootcamp" />
+<meta property="og:url" content="https://nkusiber.com/linux-bootcamp/kisim-20/" /><meta property="og:image" content="https://nkusiber.com/linux-bootcamp/kisim-20/featured.jpeg" /><meta property="article:section" content="linux-bootcamp" />
 <meta property="article:published_time" content="2024-10-13T00:00:00+00:00" />
 <meta property="article:modified_time" content="2024-10-13T00:00:00+00:00" />
 
 
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Kısım 20 - Betik Yazma (Scripting)"/>
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://nkusiber.com/linux-bootcamp/kisim-20/featured.jpeg" /><meta name="twitter:title" content="Kısım 20 - Betik Yazma (Scripting)"/>
 <meta name="twitter:description" content="20. Kısım - Betik Yazma (Scripting) # Tamamlayıcı video GİRİŞ # Bugün kursun son oturumundayız. Eğer tüm dersleri tamamladıysanız, kendinizi tebrik edin!
 Bir sistem yöneticisi olarak, işleri mümkün olduğunca otomatikleştirmenin önemini gördünüz ve Linux’un oldukça “şeffaf” olduğunu, yani ne aradığınızı bildiğinizde her şeyi bulabileceğinizi öğrendiniz."/>
 
@@ -102,7 +103,7 @@ Bir sistem yöneticisi olarak, işleri mümkün olduğunca otomatikleştirmenin 
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "589"
+    "wordCount": "582"
   }]
   </script>
 
@@ -485,16 +486,10 @@ Bir sistem yöneticisi olarak, işleri mümkün olduğunca otomatikleştirmenin 
   
   
   
- 
-  
-   
-  
- 
-
 
         
         <figure>
-            <img class="w-full rounded-lg single_hero_round nozoom" alt="Kısım 20 - Betik Yazma (Scripting)" width="1200" height="900" src="/img/iceland_hu3d03a01dcc18bc5be0e67db3d8d209a6_5000159_1200x0_resize_q75_box.jpg">
+            <img class="w-full rounded-lg single_hero_round nozoom" alt="Kısım 20 - Betik Yazma (Scripting)" width="1200" height="900" src="/linux-bootcamp/kisim-20/featured_huc3dd818d34306343502c4b17e146c594_230198_1200x0_resize_q75_box.jpeg">
             
         </figure>
         
@@ -1052,22 +1047,22 @@ Bir sistem yöneticisi olarak, işleri mümkün olduğunca otomatikleştirmenin 
     
 </h2>
 <p>Sunucunuzda başarısız oturum açma girişimlerini listeleyen küçük bir betik yazın. Aşağıdaki içeriği, ana dizininizde <code>attacker</code> adlı bir dosyaya yazın:</p>
-<pre tabindex="0"><code>#!/bin/bash
-#
-#   attacker - son başarısız giriş girişimini gösterir
-#
-echo &#34;Son başarısız giriş girişimi şu IP adresinden geldi:&#34;
-grep -i &#34;disconnected from&#34; /var/log/auth.log | tail -1 | cut -d: -f4 | cut -f7 -d&#34; &#34;
-</code></pre><p>Betiğinizin başına yorum eklemek zorunlu olmasa da iyi bir alışkanlıktır.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   attacker - son başarısız giriş girişimini gösterir</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Son başarısız giriş girişimi şu IP adresinden geldi:&#34;</span>
+</span></span><span class="line"><span class="cl">grep -i <span class="s2">&#34;disconnected from&#34;</span> /var/log/auth.log <span class="p">|</span> tail -1 <span class="p">|</span> cut -d: -f4 <span class="p">|</span> cut -f7 -d<span class="s2">&#34; &#34;</span>
+</span></span></code></pre></div><p>Betiğinizin başına yorum eklemek zorunlu olmasa da iyi bir alışkanlıktır.</p>
 <p>Betiği çalıştırılabilir yapmak için:</p>
-<pre tabindex="0"><code>chmod +x attacker
-</code></pre><p>Ardından betiği şu şekilde çalıştırabilirsiniz:</p>
-<pre tabindex="0"><code>/home/support/attacker
-</code></pre><p>veya:</p>
-<pre tabindex="0"><code>./attacker
-</code></pre><p>Betik düzgün çalıştığında, daha kolay erişim sağlamak için şu komutu kullanarak betiği <code>$PATH</code> üzerinde bir yere taşıyın:</p>
-<pre tabindex="0"><code>sudo mv attacker /usr/local/bin/attacker
-</code></pre><p>Artık sadece <code>attacker</code> yazarak betiği çalıştırabilirsiniz.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod +x attacker
+</span></span></code></pre></div><p>Ardından betiği şu şekilde çalıştırabilirsiniz:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/home/support/attacker
+</span></span></code></pre></div><p>veya:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./attacker
+</span></span></code></pre></div><p>Betik düzgün çalıştığında, daha kolay erişim sağlamak için şu komutu kullanarak betiği <code>$PATH</code> üzerinde bir yere taşıyın:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo mv attacker /usr/local/bin/attacker
+</span></span></code></pre></div><p>Artık sadece <code>attacker</code> yazarak betiği çalıştırabilirsiniz.</p>
 
 
 <h2 class="relative group">BETİĞİ GENİŞLETME 
@@ -1081,20 +1076,20 @@ grep -i &#34;disconnected from&#34; /var/log/auth.log | tail -1 | cut -d: -f4 | 
     
 </h2>
 <p>Betiği, bir parametre gerektirecek şekilde genişletebilirsiniz. Aşağıdaki betik, parametre verilmediğinde kullanım bilgisi sağlar:</p>
-<pre tabindex="0"><code>#
-##   topattack - en ısrarcı saldırganları listele
-#
-if [ -z &#34;$1&#34; ]; then
-  echo -e &#34;\nKullanım: `basename $0` &lt;sayı&gt; - En çok saldırıda bulunan &lt;sayı&gt; IP&#39;yi listeler&#34;
-  exit 0
-fi
-echo &#34; &#34;
-echo &#34;Son zamanlardaki ısrarcı saldırganlar&#34;
-echo &#34; &#34;
-echo &#34;Deneme Sayısı     IP&#34;
-echo &#34;-----------------------&#34;
-grep &#34;Disconnected from authenticating user root&#34; /var/log/auth.log | cut -d: -f4 | cut -d&#34; &#34; -f7 | sort | uniq -c | sort -nr | head -$1
-</code></pre><p>Bu betiği <code>&quot;topattack&quot;</code> olarak kaydedin, çalıştırılabilir yapın ve ardından <em>/usr/local/bin</em> dizinine taşıyın.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##   topattack - en ısrarcı saldırganları listele</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> -e <span class="s2">&#34;\nKullanım: `basename </span><span class="nv">$0</span><span class="s2">` &lt;sayı&gt; - En çok saldırıda bulunan &lt;sayı&gt; IP&#39;yi listeler&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">exit</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34; &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Son zamanlardaki ısrarcı saldırganlar&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34; &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Deneme Sayısı     IP&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;-----------------------&#34;</span>
+</span></span><span class="line"><span class="cl">grep <span class="s2">&#34;Disconnected from authenticating user root&#34;</span> /var/log/auth.log <span class="p">|</span> cut -d: -f4 <span class="p">|</span> cut -d<span class="s2">&#34; &#34;</span> -f7 <span class="p">|</span> sort <span class="p">|</span> uniq -c <span class="p">|</span> sort -nr <span class="p">|</span> head -<span class="nv">$1</span>
+</span></span></code></pre></div><p>Bu betiği <code>&quot;topattack&quot;</code> olarak kaydedin, çalıştırılabilir yapın ve ardından <em>/usr/local/bin</em> dizinine taşıyın.</p>
 <p>Bu IP adreslerinin ayrıntılarını öğrenmek için <code>whois</code> komutunu kullanabilirsiniz, ancak saldırgan sistemin masum bir şekilde ele geçirilmiş olabileceğini unutmayın.</p>
 <p>Bu tür basit betikler, yönetici görevlerinizi daha hızlı, kolay ve hatasız yapmanıza yardımcı olabilir.</p>
 <p>Otomasyon ve betik yazma hoşunuza gittiyse, makinelerinizi ve hizmetlerinizi yapılandırmak için bash betiklerinin ötesine geçmek isteyebilirsiniz. Ansible, CloudInit veya Terraform gibi orkestrasyon araçlarını araştırmak faydalı olabilir.</p>
@@ -1117,7 +1112,6 @@ grep &#34;Disconnected from authenticating user root&#34; /var/log/auth.log | cu
 <li><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html" target="_blank">BASH Programlama - Giriş HOW-TO</a></li>
 <li><a href="http://www.linuxjournal.com/content/how-be-good-and-lazy-system-administrator" target="_blank">Nasıl İyi (ve Tembel) Bir Sistem Yöneticisi Olunur</a></li>
 </ul>
-<p>Bazı haklar saklıdır. Lisans koşullarını <a href="https://github.com/livialima/linuxupskillchallenge/blob/master/LICENSE" target="_blank">buradan</a> inceleyebilirsiniz.</p>
 <hr>
 
           
@@ -1279,7 +1273,7 @@ grep &#34;Disconnected from authenticating user root&#34; /var/log/auth.log | cu
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-04/featured_hu8666b0214ef6ef8b40207752073739fc_242058_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/iceland_hu3d03a01dcc18bc5be0e67db3d8d209a6_5000159_600x0_resize_q75_box.jpg);"></div>
         
       
 
@@ -1618,7 +1612,7 @@ grep &#34;Disconnected from authenticating user root&#34; /var/log/auth.log | cu
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-07/featured_hu95837727d0877cb08e1a07e005f79d2b_159903_600x0_resize_q75_box.jpeg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-07/featured_hua6915bb76690cc589042fd3c9603711d_48054_600x0_resize_q75_box.jpeg);"></div>
         
       
 
@@ -1731,7 +1725,7 @@ grep &#34;Disconnected from authenticating user root&#34; /var/log/auth.log | cu
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/iceland_hu3d03a01dcc18bc5be0e67db3d8d209a6_5000159_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-08/featured_hu91c4a4055d2e61933e8519966d0657c7_33584_600x0_resize_q75_box.jpeg);"></div>
         
       
 

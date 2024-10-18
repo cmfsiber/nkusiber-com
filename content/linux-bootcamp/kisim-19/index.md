@@ -29,14 +29,14 @@ Linux, dosya adları ile diskteki veriler arasında ekstra bir katmana sahiptir 
 
 `ls` komutunun `-i` parametresiyle:
 
-```
+```bash
 ls -li /etc/hosts
 35356766 -rw------- 1 root root 260 Nov 25 04:59 /etc/hosts
 ```
 
 veya `stat` komutuyla:
 
-```
+```bash
 stat /etc/hosts
 File: `/etc/hosts'
 Size: 260           Blocks: 8           IO Block: 4096   regular file
@@ -59,13 +59,13 @@ Aşağıdaki adımlarla sabit ve sembolik bağlantıları nasıl oluşturacağı
 
 Sonra, `ln` komutunu kullanarak bir sabit bağlantı oluşturun:
 
-```
+```bash
 ln /etc/passwd link1
 ```
 
 Ardından, bir sembolik bağlantı (symlink) oluşturun:
 
-```
+```bash
 ln -s /etc/passwd link2
 ```
 
@@ -75,7 +75,7 @@ Symlink'lerin izinleri genellikle her şeye izin verir gibi görünür, ancak ö
 
 Her iki bağlantı türü de Linux’ta yaygın olarak kullanılır, ancak symlink'ler özellikle yaygındır. Örneğin:
 
-```
+```bash
 ls -ltr /etc/rc2.d/*
 ```
 
@@ -83,7 +83,7 @@ Bu dizin, makineniz "çalışma seviyesi 2" (normal çalışma durumu) moduna ge
 
 Ayrıca, aşağıdaki gibi bir yapı da sık karşılaşılan bir durumdur:
 
-```
+```bash
 prog
 prog-v3
 prog-v4
@@ -118,8 +118,6 @@ Sağlanan kaynaklardan daha fazla bilgi edinin ve sunucunuzda test ederek bağla
 * [Sabit ve yumuşak bağlantılar](http://linuxgazette.net/105/pitcher.html)  
 * [Linux inode’ları açıklandı](https://youtu.be/6KjMlm8hhFA)  
 * [Linux'ta inode’lar hakkında bilmek istediğiniz her şey](https://www.howtogeek.com/465350/everything-you-ever-wanted-to-know-about-inodes-on-linux/)  
-
-Bazı haklar saklıdır. Lisans koşullarını [buradan](https://github.com/livialima/linuxupskillchallenge/blob/master/LICENSE) inceleyebilirsiniz.
 
 ---
 

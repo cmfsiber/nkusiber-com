@@ -67,7 +67,3 @@ Genellikle bir uygulama kurduğunuzda, uygun bir logrotate “tarifi” de otoma
 
 ---
 
-Bazı haklar saklıdır. Lisans koşullarını [buradan](https://github.com/livialima/linuxupskillchallenge/blob/master/LICENSE) inceleyebilirsiniz.
-
----
-

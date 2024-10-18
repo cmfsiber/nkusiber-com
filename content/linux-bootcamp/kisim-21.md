@@ -10,7 +10,7 @@ authors:
 
 * [Tamamlayıcı video](https://youtu.be/MW9q6NWNDyM)
 
-Bu da neyin nesi – kurs 20 günlük değil miydi?
+Bu da neyin nesi – kurs 20 kısımlık değil miydi?
 
 Evet, ama umarız öğrenmeye devam edersiniz. İşte devam etmek için bazı öneriler.
 
@@ -58,16 +58,13 @@ Sertifikaya ihtiyacınız olmasa bile bu sınavların konu özetleri, kendi kend
 
 ## Katkıda Bulunun
 
+Eğitim TNKÜ Siber Güvenlik Topluluğu dahilinde Türkçeye çevrilmiş ve verilmiştir. Sürdüren kişi ise Livia Limadır.
 [Livia Lima](https://bio.link/livialima) şu anda bu materyali sürdürüyor, ancak her ay bu meydan okumayı düzenli olarak sunabilmek ve herkese açık tutabilmek için yardıma ihtiyacı var.
 
-Katkıda bulunmak için yapabilecekleriniz:
+Katkıda bulunmak için:
 
-* **Diğer öğrencilerin sorularını yanıtlayın**. Bir arkadaşınıza meydan okumada yardımcı olun.
-* **Yazım hatalarını veya bozuk bağlantıları düzeltin**. [Düzeltme talebi](https://github.com/livialima/linuxupskillchallenge/issues/new?assignees=&labels=&projects=&template=correction_request.md&title=Day+X+-+correction+request) gönderin.  
-* **Geliştirme önerisi yapın**. [Öneri talebi](https://github.com/livialima/linuxupskillchallenge/issues/new?assignees=&labels=&projects=&template=correction_request.md&title=Day+X+-+correction+request) gönderin.  
-* **Lemmy, Reddit veya Discord'da moderatör olun**. Bu platformlardan birinde iyi misiniz? Yönetici olarak destek verin.  
-* **Altyapıya destek verin**. [Bağış yaparak](https://www.buymeacoffee.com/livialima) veya [sponsor olarak](https://github.com/livialima) katkıda bulunun. Meydan okuma ücretsizdir ancak sunucu ve alan adı masrafları vardır. Desteklerinizi bekliyoruz!
+* **Altyapıya destek verin**. Eğitimin şu anki sorumlusuna, livialima'ya, [Bağış yaparak](https://www.buymeacoffee.com/livialima) veya [sponsor olarak](https://github.com/livialima) katkıda bulununabilirsiniz. 
 
-**Her şey için teşekkürler ve Linux maceranızda başarılar!**
+*TNKÜ Siber Güvenlik Topluluğu olarak Livia Lima'ya teşekkür ediyoruz.*
 
 ---

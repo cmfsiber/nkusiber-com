@@ -75,10 +75,10 @@ Kaynak kodu okuyabilirsiniz. Programlama bilmeseniz bile yorum satırları ilgin
 
 Genellikle kaynak dosyaların kök dizininde README veya INSTALLATION gibi dosyalar bulunur. Bu dosyaları `more` veya `less` komutlarıyla okuyun. INSTALL dosyasında muhtemelen şöyle bir talimat bulacaksınız:
 
-```
+```bash
 ./configure
 make
-make install
+sudo make install
 ```
 
 Bu adımlar şunları yapar:
@@ -89,14 +89,14 @@ Bu adımlar şunları yapar:
 
 Kurulum tamamlandıktan sonra, eski ve yeni `nmap` sürümlerini bulmak için:
 
-```
+```bash
 sudo updatedb
 locate bin/nmap
 ```
 
 Her iki sürümü çalıştırarak kontrol edin:
 
-```
+```bash
 /usr/bin/nmap -V
 /usr/local/bin/nmap -V
 ```

@@ -138,7 +138,6 @@ Varsayılan depolardan yükleme yapmak en güvenli yoldur, ancak bazen ekstra ka
 * [APT ile Paket Yönetimi](https://help.ubuntu.com/community/AptGet/Howto)  
 * [Özgür Yazılım Nedir?](http://www.debian.org/intro/free)  
 
-Bazı haklar saklıdır. Lisans koşullarını [buradan](https://github.com/livialima/linuxupskillchallenge/blob/master/LICENSE) inceleyebilirsiniz.
 
 ---
 

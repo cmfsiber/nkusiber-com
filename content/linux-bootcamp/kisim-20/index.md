@@ -46,7 +46,7 @@ Normalde “#” ile başlayan satırlar yorum satırı olarak kabul edilir, anc
 
 Sunucunuzda başarısız oturum açma girişimlerini listeleyen küçük bir betik yazın. Aşağıdaki içeriği, ana dizininizde `attacker` adlı bir dosyaya yazın:
 
-```
+```bash
 #!/bin/bash
 #
 #   attacker - son başarısız giriş girişimini gösterir
@@ -59,25 +59,25 @@ Betiğinizin başına yorum eklemek zorunlu olmasa da iyi bir alışkanlıktır.
 
 Betiği çalıştırılabilir yapmak için:
 
-```
+```bash
 chmod +x attacker
 ```
 
 Ardından betiği şu şekilde çalıştırabilirsiniz:
 
-```
+```bash
 /home/support/attacker
 ```
 
 veya:
 
-```
+```bash
 ./attacker
 ```
 
 Betik düzgün çalıştığında, daha kolay erişim sağlamak için şu komutu kullanarak betiği `$PATH` üzerinde bir yere taşıyın:
 
-```
+```bash
 sudo mv attacker /usr/local/bin/attacker
 ```
 
@@ -87,7 +87,7 @@ Artık sadece `attacker` yazarak betiği çalıştırabilirsiniz.
 
 Betiği, bir parametre gerektirecek şekilde genişletebilirsiniz. Aşağıdaki betik, parametre verilmediğinde kullanım bilgisi sağlar:
 
-```
+```bash
 #
 ##   topattack - en ısrarcı saldırganları listele
 #
@@ -120,7 +120,6 @@ Ve evet, bu kursun son dersiydi! Artık öğrendiklerinizle neler yapmayı planl
 * [BASH Programlama - Giriş HOW-TO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)  
 * [Nasıl İyi (ve Tembel) Bir Sistem Yöneticisi Olunur](http://www.linuxjournal.com/content/how-be-good-and-lazy-system-administrator)
 
-Bazı haklar saklıdır. Lisans koşullarını [buradan](https://github.com/livialima/linuxupskillchallenge/blob/master/LICENSE) inceleyebilirsiniz.
 
 ---
 

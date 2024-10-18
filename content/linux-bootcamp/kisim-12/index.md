@@ -48,13 +48,13 @@ Bu yöntemlerin her birinin farklı kullanım alanları olsa da, masaüstü bilg
 
 Evden, iş yerinden veya bir internet kafeden **SSH** ile giriş yapabiliyorsanız, aynı protokolü kullandığı için **SFTP**’yi de sorunsuz kullanabilirsiniz.
 
-Diğer protokolleri yapılandırmak daha fazla emek gerektirir ve sunucunuza fazladan protokol eklemek, "saldırı yüzeyini" artırır. Yanlış bir yapılandırma, saldırganların sisteme sızmasına neden olabilir. Ayrıca, iş yerindeki güvenlik duvarları bazı protokolleri engelleyebilir. Klasik FTP ise kullanıcı adı ve şifreleri şifrelenmeden ilettiği için, ağdaki birinin bunları yakalaması olasıdır. Eğitim sunucusu için bu büyük bir sorun olmayabilir, ancak üretim sunucularını yönetirken bu risk kabul edilemez.
+Diğer protokolleri yapılandırmak daha fazla emek gerektirir ve sunucunuza fazladan protokol eklemek, "saldırı yüzeyini" artırır. Yanlış bir yapılandırma, saldırganların sisteme sızmasına neden olabilir. Ayrıca, iş yerindeki güvenlik duvarları bazı protokolleri engelleyebilir. Klasik FTP ise kullanıcı adı ve şifreleri şifrelemeden ilettiği için, ağdaki birinin bunları yakalaması olasıdır. Eğitim sunucusu için bu büyük bir sorun olmayabilir, ancak üretim sunucularını yönetirken bu risk kabul edilemez.
 
 ## SFTP İstemci Yazılımları
 
 SFTP kullanmak için bir istemci yazılımına ihtiyacınız olacak. **_sftp_** adlı komut satırı istemcisi, tüm Apple macOS ve Linux sistemlerinde varsayılan olarak gelir. Linux masaüstü kullanıcıları, dosya yöneticileri aracılığıyla grafiksel bir SFTP istemcisine de sahiptir. Örneğin, **Nautilus** dosya yöneticisinde, _ctrl + L_ tuşlarına basarak "konum penceresi" açılır ve şu şekilde sunucuya bağlanabilirsiniz:  
 
-```  
+```bash  
 sftp://kullaniciadi@sunucu-adresi  
 ```
 

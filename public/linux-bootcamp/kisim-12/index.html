@@ -67,12 +67,13 @@
   <meta property="og:title" content="Kısım 12 - Dosya Aktarımı" />
 <meta property="og:description" content="12. Kısım - Dosya Aktarımı # Ders videosu Tamamlayıcı video GİRİŞ # Artık kendi internet sunucunuzla bir süredir çalışıyorsunuz ve orada küçük dosyalar oluşturup düzenlemeyi öğrendiniz. Basit bir web sayfasını düzenleyebileceğiniz bir web sunucusu da kurdunuz." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nkusiber.com/linux-bootcamp/kisim-12/" /><meta property="article:section" content="linux-bootcamp" />
+<meta property="og:url" content="https://nkusiber.com/linux-bootcamp/kisim-12/" /><meta property="og:image" content="https://nkusiber.com/linux-bootcamp/kisim-12/featured.jpeg" /><meta property="article:section" content="linux-bootcamp" />
 <meta property="article:published_time" content="2024-10-13T00:00:00+00:00" />
 <meta property="article:modified_time" content="2024-10-13T00:00:00+00:00" />
 
 
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Kısım 12 - Dosya Aktarımı"/>
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://nkusiber.com/linux-bootcamp/kisim-12/featured.jpeg" /><meta name="twitter:title" content="Kısım 12 - Dosya Aktarımı"/>
 <meta name="twitter:description" content="12. Kısım - Dosya Aktarımı # Ders videosu Tamamlayıcı video GİRİŞ # Artık kendi internet sunucunuzla bir süredir çalışıyorsunuz ve orada küçük dosyalar oluşturup düzenlemeyi öğrendiniz. Basit bir web sayfasını düzenleyebileceğiniz bir web sunucusu da kurdunuz."/>
 
   
@@ -483,16 +484,10 @@
   
   
   
- 
-  
-   
-  
- 
-
 
         
         <figure>
-            <img class="w-full rounded-lg single_hero_round nozoom" alt="Kısım 12 - Dosya Aktarımı" width="1200" height="900" src="/img/iceland_hu3d03a01dcc18bc5be0e67db3d8d209a6_5000159_1200x0_resize_q75_box.jpg">
+            <img class="w-full rounded-lg single_hero_round nozoom" alt="Kısım 12 - Dosya Aktarımı" width="1200" height="1200" src="/linux-bootcamp/kisim-12/featured_hud14ec945311e206bfb40231b3369c19a_57842_1200x0_resize_q75_box.jpeg">
             
         </figure>
         
@@ -1051,7 +1046,7 @@
 <li>Klasör oluşturabilir ve silebilirsiniz.</li>
 </ul>
 <p>Evden, iş yerinden veya bir internet kafeden <strong>SSH</strong> ile giriş yapabiliyorsanız, aynı protokolü kullandığı için <strong>SFTP</strong>’yi de sorunsuz kullanabilirsiniz.</p>
-<p>Diğer protokolleri yapılandırmak daha fazla emek gerektirir ve sunucunuza fazladan protokol eklemek, &ldquo;saldırı yüzeyini&rdquo; artırır. Yanlış bir yapılandırma, saldırganların sisteme sızmasına neden olabilir. Ayrıca, iş yerindeki güvenlik duvarları bazı protokolleri engelleyebilir. Klasik FTP ise kullanıcı adı ve şifreleri şifrelenmeden ilettiği için, ağdaki birinin bunları yakalaması olasıdır. Eğitim sunucusu için bu büyük bir sorun olmayabilir, ancak üretim sunucularını yönetirken bu risk kabul edilemez.</p>
+<p>Diğer protokolleri yapılandırmak daha fazla emek gerektirir ve sunucunuza fazladan protokol eklemek, &ldquo;saldırı yüzeyini&rdquo; artırır. Yanlış bir yapılandırma, saldırganların sisteme sızmasına neden olabilir. Ayrıca, iş yerindeki güvenlik duvarları bazı protokolleri engelleyebilir. Klasik FTP ise kullanıcı adı ve şifreleri şifrelemeden ilettiği için, ağdaki birinin bunları yakalaması olasıdır. Eğitim sunucusu için bu büyük bir sorun olmayabilir, ancak üretim sunucularını yönetirken bu risk kabul edilemez.</p>
 
 
 <h2 class="relative group">SFTP İstemci Yazılımları 
@@ -1065,8 +1060,8 @@
     
 </h2>
 <p>SFTP kullanmak için bir istemci yazılımına ihtiyacınız olacak. <strong><em>sftp</em></strong> adlı komut satırı istemcisi, tüm Apple macOS ve Linux sistemlerinde varsayılan olarak gelir. Linux masaüstü kullanıcıları, dosya yöneticileri aracılığıyla grafiksel bir SFTP istemcisine de sahiptir. Örneğin, <strong>Nautilus</strong> dosya yöneticisinde, <em>ctrl + L</em> tuşlarına basarak &ldquo;konum penceresi&rdquo; açılır ve şu şekilde sunucuya bağlanabilirsiniz:</p>
-<pre tabindex="0"><code>sftp://kullaniciadi@sunucu-adresi  
-</code></pre><p>Windows ve macOS sistemlerinde yerleşik bir SFTP istemcisi yoktur, ancak pek çok ücretsiz ve ücretli üçüncü taraf seçenek mevcuttur:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sftp://kullaniciadi@sunucu-adresi  
+</span></span></code></pre></div><p>Windows ve macOS sistemlerinde yerleşik bir SFTP istemcisi yoktur, ancak pek çok ücretsiz ve ücretli üçüncü taraf seçenek mevcuttur:</p>
 <ul>
 <li><strong>Windows kullanıcıları:</strong> WinSCP veya FileZilla</li>
 <li><strong>macOS kullanıcıları:</strong> CyberDuck veya FileZilla</li>
@@ -1383,7 +1378,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-07/featured_hu95837727d0877cb08e1a07e005f79d2b_159903_600x0_resize_q75_box.jpeg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-07/featured_hua6915bb76690cc589042fd3c9603711d_48054_600x0_resize_q75_box.jpeg);"></div>
         
       
 
@@ -1609,7 +1604,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/iceland_hu3d03a01dcc18bc5be0e67db3d8d209a6_5000159_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-11/featured_hu95837727d0877cb08e1a07e005f79d2b_159903_600x0_resize_q75_box.jpeg);"></div>
         
       
 
@@ -1722,7 +1717,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-04/featured_hu8666b0214ef6ef8b40207752073739fc_242058_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/iceland_hu3d03a01dcc18bc5be0e67db3d8d209a6_5000159_600x0_resize_q75_box.jpg);"></div>
         
       
 

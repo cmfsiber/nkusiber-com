@@ -101,7 +101,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "1063"
+    "wordCount": "1047"
   }]
   </script>
 
@@ -1015,18 +1015,16 @@
 <p>Gerçek bir Sistem Yöneticisi™ ise vi kullanır – bu, varsayılan olarak her zaman kurulu olan düzenleyicidir ve bugün onunla çalışmaya başlayacaksınız.</p>
 <p>Bill Joy, Vi&rsquo;yi 1970&rsquo;lerin ortalarında yazdı ve bugünkü odak noktamız olan modern Vim, 20 yıldan fazla bir geçmişe sahip olmasına rağmen hâlâ komut satırı sunucularında standart düzenleyici konumundadır. Ayrıca, programcılar ve bazı yazarlar arasında da sadık bir takipçi kitlesine sahiptir. Vim, aslında <a href="https://vimhelp.org/intro.txt.html" target="_blank">Vi IMproved</a> ifadesinin bir kısaltmasıdır ve Vi’nin doğrudan bir devamıdır.</p>
 <p>Çoğu zaman vi komutunu yazdığınızda, aslında vim başlatılır. Bunu doğrulamak için şu komutu çalıştırın:</p>
-<p>bash
-vi &ndash;version</p>
-<p>Eğer sisteminizde vi komutu aslında vim&rsquo;e <a href="19.md#two-sorts-of-links">symlink</a> edilmişse, benzer bir çıktı göreceksiniz:</p>
-<p>bash
-user@testbox:~$ vi &ndash;version
-VIM - Vi IMproved 8.2 (2019 Dec 12, compiled Oct 01 2021 01:51:08)
-Included patches: 1-2434
-Extra patches: 8.2.3402, 8.2.3403, 8.2.3409, 8.2.3428
-Modified by <a href="mailto:team&#43;vim@tracker.debian.org">team+vim@tracker.debian.org</a>
-Compiled by <a href="mailto:team&#43;vim@tracker.debian.org">team+vim@tracker.debian.org</a>
-&hellip;</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vi --version
+</span></span></code></pre></div><p>Eğer sisteminizde vi komutu aslında vim&rsquo;e <a href="19.md#two-sorts-of-links">symlink</a> edilmişse, benzer bir çıktı göreceksiniz:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">user@testbox:~$ vi --version
+</span></span><span class="line"><span class="cl">VIM - Vi IMproved 8.2 <span class="o">(</span><span class="m">2019</span> Dec 12, compiled Oct <span class="m">01</span> <span class="m">2021</span> 01:51:08<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Included patches: 1-2434
+</span></span><span class="line"><span class="cl">Extra patches: 8.2.3402, 8.2.3403, 8.2.3409, 8.2.3428
+</span></span><span class="line"><span class="cl">Modified by team+vim@tracker.debian.org
+</span></span><span class="line"><span class="cl">Compiled by team+vim@tracker.debian.org
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></div>
 
 <h2 class="relative group">BUGÜNKÜ GÖREVLERİNİZ 
     <div id="bug%C3%BCnk%C3%BC-g%C3%B6revleriniz" class="anchor"></div>
@@ -1055,10 +1053,9 @@ Compiled by <a href="mailto:team&#43;vim@tracker.debian.org">team+vim@tracker.de
     
 </h3>
 <p>Bu ders, sisteminizde vim&rsquo;in yüklü olduğunu varsayar, ancak bazı durumlarda yüklü olmayabilir. Eğer aşağıdaki gibi bir hata alırsanız:</p>
-<p>bash
-user@testbox:~$ vim
--bash: vim: command not found</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">user@testbox:~$ vim
+</span></span><span class="line"><span class="cl">-bash: vim: <span class="nb">command</span> not found
+</span></span></code></pre></div>
 
 <h4 class="relative group">SEÇENEK 1 - VIM&rsquo;İ ALIAS İLE TANIMLAYIN 
     <div id="se%C3%A7enek-1---vimi-alias-ile-tanimlayin" class="anchor"></div>
@@ -1071,10 +1068,9 @@ user@testbox:~$ vim
     
 </h4>
 <p>Bir seçenek, aşağıdaki komutlarda vim yerine vi kullanmaktır. Vim, Vi ile geriye dönük uyumludur, bu yüzden tüm alıştırmalar her iki düzenleyici için de aynı şekilde çalışacaktır. İşleri kolaylaştırmak için vim komutunu vi ile alias olarak tanımlayabiliriz:</p>
-<p>bash
-echo &ldquo;alias vim=&lsquo;vi&rsquo;&rdquo; &raquo; ~/.bashrc
-source ~/.bashrc</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;alias vim=&#39;vi&#39;&#34;</span> &gt;&gt; ~/.bashrc
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.bashrc
+</span></span></code></pre></div>
 
 <h4 class="relative group">SEÇENEK 2 - VIM&rsquo;İ KURUN 
     <div id="se%C3%A7enek-2---vimi-kurun" class="anchor"></div>
@@ -1088,9 +1084,8 @@ source ~/.bashrc</p>
 </h4>
 <p>Bir diğer seçenek ise (birçok sistem yöneticisinin yapacağı gibi) vim&rsquo;i kurmaktır.</p>
 <p>Ubuntu&rsquo;da vim&rsquo;i kurmak için sistem paket yöneticisini kullanın:</p>
-<p>bash
-sudo apt install vim</p>
-<p>Not: <a href="00-VPS-big.md#intro">Ubuntu Server LTS</a>, Linux Upskill Challenge için önerilen dağıtım olduğu için, diğer Linux dağıtımlarında vim kurulumu bu dersin kapsamı dışındadır. Ancak yukarıdaki komut, Debian tabanlı dağıtımlarda (Mint, Debian, Pop!_OS gibi) çalışmalıdır. Debian dışı dağıtımlar için küçük bir web araması, diğer paket yöneticileriyle vim&rsquo;in nasıl kurulacağını bulmanıza yardımcı olabilir.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install vim
+</span></span></code></pre></div><p>Not: <a href="00-VPS-big.md#intro">Ubuntu Server LTS</a>, Linux Upskill Challenge için önerilen dağıtım olduğu için, diğer Linux dağıtımlarında vim kurulumu bu dersin kapsamı dışındadır. Ancak yukarıdaki komut, Debian tabanlı dağıtımlarda (Mint, Debian, Pop!_OS gibi) çalışmalıdır. Debian dışı dağıtımlar için küçük bir web araması, diğer paket yöneticileriyle vim&rsquo;in nasıl kurulacağını bulmanıza yardımcı olabilir.</p>
 
 
 <h2 class="relative group">BİLMENİZ GEREKEN İKİ ŞEY 
@@ -1123,21 +1118,18 @@ sudo apt install vim</p>
     
 </h2>
 <p>Öncelikle düzenlemek için bir metin dosyası alın. /etc/services dosyasının bir kopyası işinizi görecektir:</p>
-<p>bash
-cd
-pwd
-cp -v /etc/services testfile
-vim testfile</p>
-<p>Bu noktada dosya ekranda açılacak ve &ldquo;normal mod&quot;da olacaksınız. Nano&rsquo;nun aksine, ekranda hiçbir menü yoktur ve nasıl çalıştığı pek açık değildir!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span>
+</span></span><span class="line"><span class="cl"><span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">cp -v /etc/services testfile
+</span></span><span class="line"><span class="cl">vim testfile
+</span></span></code></pre></div><p>Bu noktada dosya ekranda açılacak ve &ldquo;normal mod&quot;da olacaksınız. Nano&rsquo;nun aksine, ekranda hiçbir menü yoktur ve nasıl çalıştığı pek açık değildir!</p>
 <p>Önce bir veya iki kez Esc tuşuna basarak normal moda geçtiğinizden emin olun ve ardından :q! yazıp Enter tuşuna basın. Bu, değişiklikleri kaydetmeden çıkış yapar – bu, ilk başlarda çok önemli bir beceridir! Şimdi tekrar girin ve vim&rsquo;in ne kadar güçlü ve tehlikeli olduğunu keşfedin, ardından yine kaydetmeden çıkın:</p>
-<p>bash
-vim testfile</p>
-<p><em>h</em>, <em>j</em>, <em>k</em> ve <em>l</em> tuşlarıyla hareket edin (bu, geleneksel vi yöntemi) ve ardından ok tuşlarını deneyin. Eğer ok tuşları çalışırsa, onları kullanmakta özgürsünüz; ancak bu <em>hjkl</em> tuşlarını hatırlayın çünkü bir gün sadece geleneksel vi&rsquo;nin olduğu bir sistemde olabilirsiniz ve ok tuşları çalışmayabilir.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim testfile
+</span></span></code></pre></div><p><em>h</em>, <em>j</em>, <em>k</em> ve <em>l</em> tuşlarıyla hareket edin (bu, geleneksel vi yöntemi) ve ardından ok tuşlarını deneyin. Eğer ok tuşları çalışırsa, onları kullanmakta özgürsünüz; ancak bu <em>hjkl</em> tuşlarını hatırlayın çünkü bir gün sadece geleneksel vi&rsquo;nin olduğu bir sistemde olabilirsiniz ve ok tuşları çalışmayabilir.</p>
 <p>Dosyada gezinmeyi deneyin. Ardından Esc Esc :q! ile çıkın.</p>
 <p>Bu temel becerileri öğrendiğinize göre, daha gelişmiş işlemler yapalım:</p>
-<p>bash
-vim testfile</p>
-<p>Bu sefer dosyada birkaç satır aşağı inin ve sırasıyla 3, 3, d ve d tuşlarına basın – aniden dosyanın 33 satırı silinecek!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim testfile
+</span></span></code></pre></div><p>Bu sefer dosyada birkaç satır aşağı inin ve sırasıyla 3, 3, d ve d tuşlarına basın – aniden dosyanın 33 satırı silinecek!</p>
 <p>Neden? Çünkü normal modda <em>33dd</em>, &ldquo;33 satırı sil&rdquo; anlamına gelir. Şimdi hâlâ normal moddasınız, bu yüzden <em>u</em> tuşuna basın – son yaptığınız işlemi geri aldınız! Harika, değil mi?</p>
 <p>Artık vim&rsquo;de yeni başlayanlar için üç temel numarayı biliyorsunuz:</p>
 <ul>
@@ -1208,7 +1200,6 @@ vim testfile</p>
 <li><a href="http://www.youtube.com/watch?v=71YTkxUNwmg" target="_blank">Vi - Vim Eğitimi</a> (video)</li>
 <li><a href="https://linuxize.com/post/how-to-copy-cut-paste-in-vim/" target="_blank">Vim / Vi&rsquo;de Kopyalama, Kesme ve Yapıştırma</a></li>
 </ul>
-<p>Bazı haklar saklıdır. Lisans şartlarını <a href="https://github.com/livialima/linuxupskillchallenge/blob/master/LICENSE" target="_blank">buradan</a> kontrol edin.</p>
 
           
           
@@ -1369,7 +1360,7 @@ vim testfile</p>
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-07/featured_hu95837727d0877cb08e1a07e005f79d2b_159903_600x0_resize_q75_box.jpeg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-07/featured_hua6915bb76690cc589042fd3c9603711d_48054_600x0_resize_q75_box.jpeg);"></div>
         
       
 
@@ -1482,7 +1473,7 @@ vim testfile</p>
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-04/featured_hu8666b0214ef6ef8b40207752073739fc_242058_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/iceland_hu3d03a01dcc18bc5be0e67db3d8d209a6_5000159_600x0_resize_q75_box.jpg);"></div>
         
       
 
@@ -1708,7 +1699,7 @@ vim testfile</p>
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/iceland_hu3d03a01dcc18bc5be0e67db3d8d209a6_5000159_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-08/featured_hu91c4a4055d2e61933e8519966d0657c7_33584_600x0_resize_q75_box.jpeg);"></div>
         
       
 
@@ -1934,7 +1925,7 @@ vim testfile</p>
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/iceland_hu3d03a01dcc18bc5be0e67db3d8d209a6_5000159_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/linux-bootcamp/kisim-11/featured_hu95837727d0877cb08e1a07e005f79d2b_159903_600x0_resize_q75_box.jpeg);"></div>
         
       
 

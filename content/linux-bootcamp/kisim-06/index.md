@@ -19,12 +19,13 @@ Bill Joy, Vi'yi 1970'lerin ortalarında yazdı ve bugünkü odak noktamız olan 
 
 Çoğu zaman vi komutunu yazdığınızda, aslında vim başlatılır. Bunu doğrulamak için şu komutu çalıştırın:
 
-bash
+```bash
 vi --version
+```
 
 Eğer sisteminizde vi komutu aslında vim'e [symlink](19.md#two-sorts-of-links) edilmişse, benzer bir çıktı göreceksiniz:
 
-bash
+```bash
 user@testbox:~$ vi --version
 VIM - Vi IMproved 8.2 (2019 Dec 12, compiled Oct 01 2021 01:51:08)
 Included patches: 1-2434
@@ -32,6 +33,7 @@ Extra patches: 8.2.3402, 8.2.3403, 8.2.3409, 8.2.3428
 Modified by team+vim@tracker.debian.org
 Compiled by team+vim@tracker.debian.org
 ...
+```
 
 ## BUGÜNKÜ GÖREVLERİNİZ
 
@@ -42,17 +44,19 @@ Compiled by team+vim@tracker.debian.org
 
 Bu ders, sisteminizde vim'in yüklü olduğunu varsayar, ancak bazı durumlarda yüklü olmayabilir. Eğer aşağıdaki gibi bir hata alırsanız:
 
-bash
+```bash
 user@testbox:~$ vim
 -bash: vim: command not found
+```
 
 #### SEÇENEK 1 - VIM'İ ALIAS İLE TANIMLAYIN
 
 Bir seçenek, aşağıdaki komutlarda vim yerine vi kullanmaktır. Vim, Vi ile geriye dönük uyumludur, bu yüzden tüm alıştırmalar her iki düzenleyici için de aynı şekilde çalışacaktır. İşleri kolaylaştırmak için vim komutunu vi ile alias olarak tanımlayabiliriz:
 
-bash
+```bash
 echo "alias vim='vi'" >> ~/.bashrc
 source ~/.bashrc
+```
 
 #### SEÇENEK 2 - VIM'İ KURUN
 
@@ -60,8 +64,9 @@ Bir diğer seçenek ise (birçok sistem yöneticisinin yapacağı gibi) vim'i ku
 
 Ubuntu'da vim'i kurmak için sistem paket yöneticisini kullanın:
 
-bash
+```bash
 sudo apt install vim
+```
 
 Not: [Ubuntu Server LTS](00-VPS-big.md#intro), Linux Upskill Challenge için önerilen dağıtım olduğu için, diğer Linux dağıtımlarında vim kurulumu bu dersin kapsamı dışındadır. Ancak yukarıdaki komut, Debian tabanlı dağıtımlarda (Mint, Debian, Pop!_OS gibi) çalışmalıdır. Debian dışı dağıtımlar için küçük bir web araması, diğer paket yöneticileriyle vim'in nasıl kurulacağını bulmanıza yardımcı olabilir.
 
@@ -80,18 +85,20 @@ Not: [Ubuntu Server LTS](00-VPS-big.md#intro), Linux Upskill Challenge için ön
 
 Öncelikle düzenlemek için bir metin dosyası alın. /etc/services dosyasının bir kopyası işinizi görecektir:
 
-bash
+```bash
 cd
 pwd
 cp -v /etc/services testfile
 vim testfile
+```
 
 Bu noktada dosya ekranda açılacak ve "normal mod"da olacaksınız. Nano'nun aksine, ekranda hiçbir menü yoktur ve nasıl çalıştığı pek açık değildir!
 
 Önce bir veya iki kez Esc tuşuna basarak normal moda geçtiğinizden emin olun ve ardından :q! yazıp Enter tuşuna basın. Bu, değişiklikleri kaydetmeden çıkış yapar – bu, ilk başlarda çok önemli bir beceridir! Şimdi tekrar girin ve vim'in ne kadar güçlü ve tehlikeli olduğunu keşfedin, ardından yine kaydetmeden çıkın:
 
-bash
+```bash
 vim testfile
+```
 
 _h_, _j_, _k_ ve _l_ tuşlarıyla hareket edin (bu, geleneksel vi yöntemi) ve ardından ok tuşlarını deneyin. Eğer ok tuşları çalışırsa, onları kullanmakta özgürsünüz; ancak bu _hjkl_ tuşlarını hatırlayın çünkü bir gün sadece geleneksel vi'nin olduğu bir sistemde olabilirsiniz ve ok tuşları çalışmayabilir.
 
@@ -99,8 +106,9 @@ Dosyada gezinmeyi deneyin. Ardından Esc Esc :q! ile çıkın.
 
 Bu temel becerileri öğrendiğinize göre, daha gelişmiş işlemler yapalım:
 
-bash
+```bash
 vim testfile
+```
 
 Bu sefer dosyada birkaç satır aşağı inin ve sırasıyla 3, 3, d ve d tuşlarına basın – aniden dosyanın 33 satırı silinecek!
 
@@ -148,5 +156,4 @@ Vi veya vim konusunda zaten deneyimliyseniz, bugün bir saat ayırarak ~/.vimrc 
 * [Vi - Vim Eğitimi](http://www.youtube.com/watch?v=71YTkxUNwmg) (video)  
 * [Vim / Vi'de Kopyalama, Kesme ve Yapıştırma](https://linuxize.com/post/how-to-copy-cut-paste-in-vim/)  
 
-Bazı haklar saklıdır. Lisans şartlarını [buradan](https://github.com/livialima/linuxupskillchallenge/blob/master/LICENSE) kontrol edin.
 
