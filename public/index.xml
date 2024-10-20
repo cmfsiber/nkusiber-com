@@ -57,7 +57,7 @@
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
       <guid>https://nkusiber.com/linux-bootcamp/kisim-04/</guid>
       <description>4. Kısım - Yazılım Kurulumu ve Dosya Yapısının Keşfi # Ders videosu GİRİŞ # Bir sistem yöneticisi olarak temel görevlerinizden biri, gerektiğinde yeni yazılımlar kurmaktır. Ayrıca, bir Linux sistemindeki standart dizinlerin yapısına çok aşina olmanız gerekecek.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim-04/featured.jpeg" />
     </item>
     
     <item>
@@ -107,7 +107,7 @@
       <author>cmfsiber@gmail.com (NKÜ Siber Güvenlik Topluluğu)</author>
       <guid>https://nkusiber.com/linux-bootcamp/kisim-09/</guid>
       <description>9. Kısım - Ağ Kurulumuna Dalış # Ders videosu GİRİŞ # Sunucunuz şu anda uzaktan giriş için sshd ve web erişimi için apache2 hizmetlerini çalıştırıyor. Bu hizmetler, TCP/IP &amp;ldquo;portları&amp;rdquo; 22 ve 80 üzerinden &amp;ldquo;dünyaya açık&amp;rdquo; durumda.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://nkusiber.com/linux-bootcamp/kisim-09/featured.jpeg" />
     </item>
     
     <item>
